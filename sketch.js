@@ -10,10 +10,10 @@ var polygon;
 var slingShot;
 var polygon_img, backgroundImg;
 var score=0;
-var bg = "images/light.jpg";
+var bg = "light.jpg";
 function preload(){
   getBackgroundImage();
-  polygon_img=loadImage("images/polygon.png");
+  polygon_img=loadImage("polygon.png");
   
 }
 function setup() {
@@ -169,9 +169,9 @@ async function getBackgroundImage(){
    //console.log(hour);
 
    if (hour >= 06 && hour <= 18) {
-     bg = "images/light.jpg";
+     bg = "light.jpg";
    } else {
-     bg = "images/dark.jpg";
+     bg = "dark.jpg";
    }
 
    backgroundImg = loadImage(bg);
